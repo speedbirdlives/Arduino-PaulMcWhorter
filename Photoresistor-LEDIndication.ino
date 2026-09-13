@@ -1,3 +1,4 @@
+//Same as Photoresistor-Photodetector.ino. Check that out :)
 
 int lightPin = A0;
 int LightVal;
