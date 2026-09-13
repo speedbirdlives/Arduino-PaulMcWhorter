@@ -1,3 +1,9 @@
+//Simple program to demonstrate a RGB led using user input for the color.
+
+//Same as RGBLed.ino. CHeck that file out.
+//Here we are using string as the user input instead of integer in RGBLed.ino.
+
+
 int red =6;
 int green =7;
 int blue =8;
