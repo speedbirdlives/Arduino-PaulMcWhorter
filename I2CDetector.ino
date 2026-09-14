@@ -1,3 +1,6 @@
+//ChatGPT program to find if there is a working I2C device or not.
+
+
 #include <Wire.h>
 
 void setup() {
