@@ -1,3 +1,8 @@
+//Simple program to control servo motor position based on light intensity.
+//Application: Display if the day is sunny,cloudy or if its night.
+
+//Incomplete program - Move to some other one :D. Sorry for the inconvenience.
+
 #include <Servo.h>
 
 int ServoPin = 10;
