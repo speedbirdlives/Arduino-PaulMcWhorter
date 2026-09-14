@@ -1,12 +1,22 @@
+//Program to demonstrate the use of a LCD Display with I2C module.
+
+//include required packages
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
+//defining the LCD display (20x4)
 LiquidCrystal_I2C lcd(0x27, 20, 4);
 
+
 void setup() {
+  //setup code - runs once
+
+  //initialising lcd display and turning on backlight
   lcd.init();
   lcd.backlight();
 
+  
+//set cursor and print commands
   lcd.setCursor(0, 0);
   lcd.print("");
 
@@ -23,4 +33,6 @@ void setup() {
 }
 
 void loop() {
+  //put code here to run repeatedly.
+  //void loop() is currently empty.
 }
