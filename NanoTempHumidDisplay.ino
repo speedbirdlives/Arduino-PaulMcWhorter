@@ -1,3 +1,6 @@
+//Using Arduino nano for a portable temperature and humidity display
+//Same logic and code as TempHumiditywithLCD.ino!! Check that out!
+
 #include <DHT.h>
 #define Type DHT11
 
