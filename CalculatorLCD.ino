@@ -1,8 +1,13 @@
+//Program to build a simple calculator using a LCD display.
+
+//Including required packages
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
+//Initialising the LCD display
 LiquidCrystal_I2C lcd(0x27, 20, 4);
 
+//declaring required variables
 int num1;
 int num2;
 int ans;
@@ -10,9 +15,11 @@ int op;
 
 void setup() {
 
+  //initialising the lcd and turning on backlight
   lcd.init();
   lcd.backlight();
 
+  //Setting up serial monitor
   Serial.begin(9600);
 
   // Ask for first number
@@ -77,7 +84,7 @@ void setup() {
 
   lcd.clear();
 
-  // Perform calculation
+  // Perform calculation and various logic
   if (op == 1) {
 
     ans = num1 + num2;
@@ -140,4 +147,5 @@ void setup() {
 }
 
 void loop() {
+  //empty void loop
 }
